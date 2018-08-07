@@ -73,7 +73,9 @@
                     <repository>cospedia-${project.artifactId}</repository>
                     <tag>${project.version}</tag>
                     <buildArgs>
-                        <JAR_FILE>${project.build.finalName}.jar</JAR_FILE>
+                        <artifactId>${project.artifactId}</artifactId>
+                        <groupId>${project.groupId}</groupId>
+                        <version>${project.version}</version>
                     </buildArgs>
                 </configuration>
             </plugin>
